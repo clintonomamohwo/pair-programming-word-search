@@ -9,7 +9,7 @@ const transpose = function(matrix) {
   }
   return result;
 };
-  
+
 const wordSearch = (letters, word) => {
   const horizontalJoin = letters.map(ls => ls.join(''));
   const verticalJoin = transpose(letters).map(ls => ls.join(''));
@@ -25,6 +25,6 @@ const wordSearch = (letters, word) => {
   }
   return false;
 };
-  
 
+module.exports = wordSearch;
 module.exports = wordSearch;
